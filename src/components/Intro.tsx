@@ -1,19 +1,20 @@
 'use client'
 import Image from 'next/image'
 import TypeIt from 'typeit-react'
+import IconLink from './IconLink'
 // &lt;/frontend developer&gt;
 export default function Intro() {
   const roles = [
-    {text: '&lt;frontend developer /&gt;', pause: 1500},
-    {text: '&lt;IoT student /&gt;', pause: 1000},
-    {text: '&lt;problem solver /&gt;', pause: 750},
-    {text: '&lt;lifelong learner /&gt;', pause: 750},
+    { text: '&lt;frontend developer /&gt;', pause: 1500 },
+    { text: '&lt;IoT student /&gt;', pause: 1000 },
+    { text: '&lt;problem solver /&gt;', pause: 750 },
+    { text: '&lt;lifelong learner /&gt;', pause: 750 },
   ]
 
   return (
     <div className="flex flex-col md:flex-row-reverse items-center justify-between w-full">
       {/* avatar section */}
-      <div className='w-48 md:w-64 lg:w-80 md:ml-8 mb-8 md:mb-0'>
+      <div className="w-48 md:w-64 lg:w-80 md:ml-8 mb-8 md:mb-0">
         <Image src="/my-photo.png" alt="my-photo" width={320} height={320} className="rounded-full" />
       </div>
       {/* intro text section */}
@@ -26,7 +27,7 @@ export default function Intro() {
               <TypeIt
                 options={{ loop: true, speed: 75 }}
                 getBeforeInit={instance => {
-                  roles.forEach(({text, pause}) => {
+                  roles.forEach(({ text, pause }) => {
                     instance = instance.type(text).pause(pause).delete()
                   })
                   return instance
