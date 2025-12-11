@@ -17,7 +17,7 @@ export const projects = [
       // demo: 'https://example.com/project-one',
     },
     imgSrc: '/project-weather.jpg',
-    bgColor: 'bg-pink-100',
+    bgColor: 'bg-orange-100',
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ export const projects = [
       demo: 'https://photos.handing.me/',
     },
     imgSrc: '/project-imagegallery.jpg',
-    bgColor: 'bg-orange-100',
+    bgColor: 'bg-red-100',
   },
   {
     id: 4,

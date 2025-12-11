@@ -12,10 +12,10 @@ interface ProjectCardProps {
   bgColor?: string
 }
 
-const ProjectCard = ({ title, description, techs, links, imgSrc }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, techs, links, imgSrc, bgColor }: ProjectCardProps) => {
   return (
     <div className={`flex flex-col md:flex-row gap-6 md:gap-12 shadow-md rounded-lg overflow-hidden`}>
-      <div className={`w-full md:w-1/2 flex-shrink-0 p-12 bg-gray-100 rounded-lg`}>
+      <div className={`w-full md:w-1/2 flex-shrink-0 p-12 bg-gray-50 rounded-lg`}>
         <div className="relative w-full h-[250px]">
           <Image
             src={imgSrc}

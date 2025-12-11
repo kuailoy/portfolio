@@ -33,8 +33,7 @@ export default function Intro() {
         </div>
         <div>
           <p className="text-gray-500">
-            I&apos;m a front-end developer with rich experience creating responsive and user-friendly websites, and a second-year IoT student. Detail-oriented, collaborative, and always eager to
-            learn.
+            I&apos;m a front-end-focused developer with experience creating responsive, user-friendly applications. I&apos;m currently a second-year Internet of Things student. Coding feels calming to me, and I&apos;m always excited to learn new technologies.
           </p>
         </div>
          <ul className="flex space-x-12 mt-10">
