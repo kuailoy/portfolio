@@ -10,7 +10,7 @@ export const projects = [
   {
     id: 1,
     title: '🌤️ City Weather Dashboard',
-    description: `A frontend demo that integrates city search and weather data from public APIs. (In Progress)`,
+    description: `(In Progress) A frontend demo that integrates city search and weather data from public APIs.`,
     techs: ['React', 'TypeScript', 'tailwindcss', 'REST API', 'Vite', 'shadcn/ui'],
     links: {
       github: 'https://github.com/kuailoy/city-weather',

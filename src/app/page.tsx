@@ -2,6 +2,7 @@ import IconLink from '@/components/IconLink'
 import Intro from '@/components/Intro'
 import Navbar from '@/components/Navbar'
 import ProjectCard from '@/components/ProjectCard'
+import ScrollToTop from '@/components/ScrollToTop'
 import { owner, projects, iconList } from '@/data/portfolio'
 
 export default function Home() {
@@ -15,11 +16,11 @@ export default function Home() {
       <main className="w-full flex-1 py-8 md:py-24 flex flex-col gap-12 md:gap-4 items-center sm:items-start">
         <Intro />
         {/* <hr className="w-full border-t border-gray-300 my-12" /> */}
-        <div className="my-12 md:my-32 w-full flex flex-col gap-12">
+        <section id="projects" className="py-12 my-0 md:my-12 w-full flex flex-col gap-12">
           {projects.map(({ id, ...projects }) => (
             <ProjectCard key={id} {...projects} />
           ))}
-        </div>
+        </section>
       </main>
 
       <footer className="flex-none row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
@@ -31,6 +32,8 @@ export default function Home() {
           ))}
         </ul>
       </footer>
+
+      <ScrollToTop />
     </div>
   )
 }
