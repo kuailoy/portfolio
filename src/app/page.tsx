@@ -1,14 +1,8 @@
 import IconLink from '@/components/IconLink'
 import Intro from '@/components/Intro'
 import Navbar from '@/components/Navbar'
-
-const owner = 'ding.han'
-
-const iconList = [
-  { href: 'https://github.com/kuailoy', iconSrc: '/github.svg' },
-  { href: 'https://www.linkedin.com/in/ding-han-7920202b8/', iconSrc: '/linkedin.svg' },
-  { href: 'https://www.instagram.com/dingloow/', iconSrc: '/instagram.svg' },
-]
+import ProjectCard from '@/components/ProjectCard'
+import { owner, projects, iconList } from '@/data/portfolio'
 
 export default function Home() {
   return (
@@ -18,8 +12,14 @@ export default function Home() {
         <Navbar />
       </header>
 
-      <main className="w-full flex-1 py-8 md:py-16 flex flex-col items-center sm:items-start">
+      <main className="w-full flex-1 py-8 md:py-24 flex flex-col gap-12 md:gap-4 items-center sm:items-start">
         <Intro />
+        {/* <hr className="w-full border-t border-gray-300 my-12" /> */}
+        <div className="my-12 md:my-32 w-full flex flex-col gap-12">
+          {projects.map(({ id, ...projects }) => (
+            <ProjectCard key={id} {...projects} />
+          ))}
+        </div>
       </main>
 
       <footer className="flex-none row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

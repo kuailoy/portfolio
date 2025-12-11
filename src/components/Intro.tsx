@@ -2,15 +2,10 @@
 import Image from 'next/image'
 import TypeIt from 'typeit-react'
 import IconLink from './IconLink'
+import { iconList, roles } from '@/data/portfolio'
+
 // &lt;/frontend developer&gt;
 export default function Intro() {
-  const roles = [
-    { text: '&lt;frontend developer /&gt;', pause: 1500 },
-    { text: '&lt;IoT student /&gt;', pause: 1000 },
-    { text: '&lt;problem solver /&gt;', pause: 750 },
-    { text: '&lt;lifelong learner /&gt;', pause: 750 },
-  ]
-
   return (
     <div className="flex flex-col md:flex-row-reverse items-center justify-between w-full">
       {/* avatar section */}
@@ -42,6 +37,13 @@ export default function Intro() {
             learn.
           </p>
         </div>
+         <ul className="flex space-x-12 mt-10">
+          {iconList.map(({ href, iconSrc }) => (
+            <li key={iconSrc}>
+              <IconLink href={href} iconSrc={iconSrc} size={24} />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )

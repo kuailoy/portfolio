@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 interface IconLinkProps {
-href:string
+  href: string
   iconSrc: string
   size?: number
 }
