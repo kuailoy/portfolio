@@ -3,14 +3,26 @@ import Image from 'next/image'
 import TypeIt from 'typeit-react'
 import IconLink from './IconLink'
 import { iconList, roles } from '@/data/portfolio'
+import { useRotation } from '@/hooks/useRotation'
 
-// &lt;/frontend developer&gt;
 export default function Intro() {
+  const { isRotating, handleClick } = useRotation()
+
   return (
     <div className="flex flex-col md:flex-row-reverse items-center justify-between w-full">
       {/* avatar section */}
-      <div className="w-48 md:w-64 lg:w-80 md:ml-8 mb-8 md:mb-0">
-        <Image src="/my-photo.png" alt="my-photo" width={320} height={320} className="rounded-full" />
+      <div
+        className={`w-48 md:w-64 lg:w-80 md:ml-8 mb-8 md:mb-0 hover:scale-105 transition-transform duration-300 cursor-pointer ${isRotating ? 'animate-rotate-3d' : ''}`}
+        onClick={handleClick}
+        style={{ transformStyle: 'preserve-3d' }}
+      >
+        <Image
+          src="/my-photo.png"
+          alt="my-photo"
+          width={320}
+          height={320}
+          className="rounded-full"
+        />
       </div>
       {/* intro text section */}
       <div className="max-w-lg flex-1 mx-6 lg:mx-0">
@@ -33,7 +45,7 @@ export default function Intro() {
         </div>
         <div>
           <p className="text-gray-500">
-            I&apos;m a front-end-focused developer with experience creating responsive, user-friendly applications. I&apos;m currently a second-year Internet of Things student. Coding feels calming to me, and I&apos;m always excited to learn new technologies.
+            I&apos;m a second-year IoT student and a developer with a strong front-end background. Coding feels calming to me, and I&apos;m always excited to learn new technologies.
           </p>
         </div>
          <ul className="flex space-x-12 mt-10">
