@@ -7,7 +7,7 @@ import { owner, projects, iconList } from '@/data/portfolio'
 
 export default function Home() {
   return (
-    <div className="font-mono flex flex-col items-center min-h-screen max-w-5xl py-1 px-2 sm:py-6 sm:px-10 mx-auto">
+    <div className="font-jetbrains flex flex-col items-center min-h-screen max-w-5xl py-1 px-2 sm:py-6 sm:px-10 mx-auto">
       <header className="w-full flex-none flex justify-between items-center">
         <h1>{owner}</h1>
         <Navbar />

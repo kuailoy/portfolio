@@ -12,7 +12,7 @@ export default function Intro() {
     <div className="flex flex-col md:flex-row-reverse items-center justify-between w-full">
       {/* avatar section */}
       <div
-        className={`w-48 md:w-64 lg:w-80 md:ml-8 mb-8 md:mb-0 hover:scale-105 transition-transform duration-300 cursor-pointer ${isRotating ? 'animate-rotate-3d' : ''}`}
+        className={`w-48 md:w-64 lg:w-80 md:ml-8 mb-8 md:mb-0 hover-scale cursor-pointer ${isRotating ? 'animate-rotate-3d' : ''}`}
         onClick={handleClick}
         style={{ transformStyle: 'preserve-3d' }}
       >
