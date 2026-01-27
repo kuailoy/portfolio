@@ -3,7 +3,7 @@ import Intro from '@/components/Intro'
 import Navbar from '@/components/Navbar'
 import ProjectCard from '@/components/ProjectCard'
 import ScrollToTop from '@/components/ScrollToTop'
-import { owner, projects, iconList } from '@/data/portfolio'
+import { owner, projects } from '@/data/portfolio'
 
 export default function Home() {
   return (
@@ -24,13 +24,6 @@ export default function Home() {
       </main>
 
       <footer className="flex-none row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        {/* <ul className="flex space-x-12">
-          {iconList.map(({ href, icon }) => (
-            <li key={href}>
-              <IconLink href={href} icon={icon} size={24} />
-            </li>
-          ))}
-        </ul> */}
         <p>© 2026 Ding Han</p>
       </footer>
 

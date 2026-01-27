@@ -44,7 +44,7 @@ export default function Intro() {
           </p>
         </div>
         <div>
-          <p className="text-gray-500">
+          <p className="text-muted">
             I&apos;m a second-year IoT student and a developer with a strong front-end background. Coding feels calming to me, and I&apos;m always excited to learn new technologies.
           </p>
         </div>

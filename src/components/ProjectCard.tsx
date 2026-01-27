@@ -25,8 +25,8 @@ const ProjectCard = ({ title, description, techs, links, imgSrc, bgColor }: Proj
           />
         </div>
       </div>
-      <div className="py-8 px-6 text-gray-500">
-        <h2 className="text-xl font-semibold mb-4 text-gray-800">{title}</h2>
+      <div className="py-8 px-6 text-muted">
+        <h2 className="text-xl font-semibold mb-4 text-foreground">{title}</h2>
         <p className="mb-4">{description}</p>
         <p className="text-sm mb-6">
           <span>Built With: </span>

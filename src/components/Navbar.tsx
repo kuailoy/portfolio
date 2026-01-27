@@ -7,7 +7,7 @@ export default function Navbar() {
   const { resolvedTheme, setTheme } = useTheme()
   const checked = resolvedTheme ? resolvedTheme === 'dark' : undefined
   return (
-    <nav className="flex gap-6 p-4">
+    <nav className="flex items-center gap-6 p-4">
       <a href="#about" className="hover-underline-center">
         About
       </a>
