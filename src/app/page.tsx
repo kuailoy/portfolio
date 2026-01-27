@@ -24,13 +24,14 @@ export default function Home() {
       </main>
 
       <footer className="flex-none row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <ul className="flex space-x-12">
+        {/* <ul className="flex space-x-12">
           {iconList.map(({ href, icon }) => (
             <li key={href}>
               <IconLink href={href} icon={icon} size={24} />
             </li>
           ))}
-        </ul>
+        </ul> */}
+        <p>© 2026 Ding Han</p>
       </footer>
 
       <ScrollToTop />
