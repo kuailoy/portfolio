@@ -1,15 +1,20 @@
-import Image from 'next/image'
+import { IconType } from 'react-icons'
 
 interface IconLinkProps {
   href: string
-  iconSrc: string
+  icon: IconType
   size?: number
 }
 
-const IconLink = ({ href, iconSrc, size = 16 }: IconLinkProps) => {
+const IconLink = ({ href, icon: Icon, size = 16 }: IconLinkProps) => {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      <Image aria-hidden src={iconSrc} alt="File icon" width={size} height={size} />
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-foreground hover:text-foreground/70 transition-colors"
+    >
+      <Icon aria-hidden size={size} />
     </a>
   )
 }

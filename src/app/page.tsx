@@ -25,9 +25,9 @@ export default function Home() {
 
       <footer className="flex-none row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <ul className="flex space-x-12">
-          {iconList.map(({ href, iconSrc }) => (
-            <li key={iconSrc}>
-              <IconLink href={href} iconSrc={iconSrc} size={24} />
+          {iconList.map(({ href, icon }) => (
+            <li key={href}>
+              <IconLink href={href} icon={icon} size={24} />
             </li>
           ))}
         </ul>

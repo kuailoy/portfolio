@@ -1,9 +1,11 @@
+import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si'
+
 export const owner = 'ding.han'
 
 export const iconList = [
-  { href: 'https://github.com/kuailoy', iconSrc: '/github.svg' },
-  { href: 'https://www.linkedin.com/in/ding-han-7920202b8/', iconSrc: '/linkedin.svg' },
-  { href: 'https://www.instagram.com/dingloow/', iconSrc: '/instagram.svg' },
+  { href: 'https://github.com/kuailoy', icon: SiGithub },
+  { href: 'https://www.linkedin.com/in/ding-han-7920202b8/', icon: SiLinkedin },
+  { href: 'https://www.instagram.com/dingloow/', icon: SiInstagram },
 ]
 
 export const projects = [

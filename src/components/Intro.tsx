@@ -49,9 +49,9 @@ export default function Intro() {
           </p>
         </div>
          <ul className="flex space-x-12 mt-10">
-          {iconList.map(({ href, iconSrc }) => (
-            <li key={iconSrc}>
-              <IconLink href={href} iconSrc={iconSrc} size={24} />
+          {iconList.map(({ href, icon }) => (
+            <li key={href}>
+              <IconLink href={href} icon={icon} size={24} />
             </li>
           ))}
         </ul>
